@@ -2,6 +2,7 @@
     --btn-signIn-red: #e50914;
     --btn-red: #e30813;
     --white: #ffffff;
+    --white-Light: #ccc;
     --black: #000000;
 }
 
@@ -10,41 +11,51 @@
     margin: 0;
     padding: 0;
 }
-
 .container1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/main-background.jpg);
     background-position: center;
     background-size: cover;
 }
-
 .navbar {
     border: 1px solid black;
     height: 15vh;
     display: flex;
     justify-content: space-between;
 }
-
-.navbar > div {
-    border: 1px solid red;
-}
-
 .container1-body {
     height: 85vh;
 }
-
 .logo {
     margin-left: 4%;
 }
-
 .navbar-align-right {
     color: var(--white);
-    width: 17.5vw;
+    width: 14vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-right: 4%;
 }
+.btn-language {
+    border: 1px solid var(--white);
+    border-radius: 2.5px;
+    color: var(--white);
+    background: transparent;
+    font-size: 16px;
+    padding: 6.5px 15px;
+}
+.btn-signin {
+    border: 1px solid var(--btn-signIn-red);
+    border-radius: 2.5px;
+    color: var(--white);
+    background: var(--btn-signIn-red);
+    font-size: 16px;
+    padding: 6.5px 15px;
+}
+.btn-signin:hover {
+    cursor: pointer;
+}
 
-.navbar-align-right > div {
-    border: 1px solid white;
+.container1-wrapper {
+    color: var(--white);
 }
